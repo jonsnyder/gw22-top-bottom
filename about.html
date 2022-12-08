@@ -12,7 +12,26 @@
 <title>About</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
-<meta name="author" content=""> 
+<meta name="author" content="">
+
+<script>
+  !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
+  []).push(o),n[o]=function(){var u=arguments;return new Promise(
+  function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
+  (window,["alloy"]);
+</script>
+<script src="js/alloy.min.js" async></script>
+<script>
+  alloy("configure", {
+    edgeConfigId: "bdfe793d-6eb6-4c8b-842a-9e61b66ce814",
+    orgId: "53A16ACB5CC1D3760A495C99@AdobeOrg",
+    edgeBasePath: "ee-pre-prd",
+    debugEnabled: true
+  });
+  alloy("fetch", {
+    renderDecisions: true
+  });
+</script>
 <!-- bootstrap css -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <!-- style css -->
@@ -25,7 +44,7 @@
 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 <!-- Tweaks for older IEs-->
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<!-- owl stylesheets --> 
+<!-- owl stylesheets -->
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -136,8 +155,11 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-    <!-- javascript --> 
+    <!-- javascript -->
     <script src="js/owl.carousel.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+      alloy("sendEvent");
+    </script>
 </body>
 </html>

@@ -21,6 +21,17 @@
   (window,["alloy"]);
 </script>
 <script src="js/alloy.min.js" async></script>
+<script>
+  alloy("configure", {
+    edgeConfigId: "bdfe793d-6eb6-4c8b-842a-9e61b66ce814",
+    orgId: "53A16ACB5CC1D3760A495C99@AdobeOrg",
+    edgeBasePath: "ee-pre-prd",
+    debugEnabled: true
+  });
+  alloy("fetch", {
+    renderDecisions: true
+  });
+</script>
 <!-- bootstrap css -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <!-- style css -->
@@ -36,15 +47,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
 <body>
-  <script>
-    alloy("configure", {
-      edgeConfigId: "bdfe793d-6eb6-4c8b-842a-9e61b66ce814",
-      orgId: "53A16ACB5CC1D3760A495C99@AdobeOrg",
-      edgeBasePath: "ee-pre-prd",
-      debugEnabled: true
-    });
-    alloy("fetch");
-  </script>
   <!--header section start -->
     <div class="header_section">
       <div class="header_left">
